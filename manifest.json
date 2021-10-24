@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "AsanaGet",
+    "version": "1.4",
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js; object-src 'self'",
+    "browser_action": {
+        "default_popup": "body.html"
+    },
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": [
+            "content.js"
+        ]
+    }],
+
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "icons": {
+        "16": "./icons/logo.png",
+        "48": "./icons/logo48.png",
+        "32": "./icons/logo32.png",
+        "128": "./icons/logo128.png"
+    }
+}

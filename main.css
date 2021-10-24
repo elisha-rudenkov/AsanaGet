@@ -1,0 +1,269 @@
+body {
+    color: #313131;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    width: 450px;
+    height: 150px;
+    text-align: center;
+}
+
+span {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+#errors {
+    font-size: small;
+    font-weight: 300;
+}
+
+#message-box {
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    background-color: #ffd6d6;
+    font-weight: 600;
+    font-family: "Raleway";
+    border-radius: 10px;
+    font-size: 15pt;
+    display: none;
+    margin-bottom: 10;
+    margin-top: 60px;
+}
+
+#navigation {
+    position: relative;
+}
+
+#Settings {
+    position: absolute;
+    right: 2px;
+    top: 100px;
+    padding-bottom: 10px;
+}
+
+#Manual {
+    position: absolute;
+    left: 2px;
+    top: 100px;
+    bottom: 17px;
+}
+
+.btn {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.text {
+    padding: 0 50px;
+    visibility: hidden;
+}
+
+.red {
+    color: #ff5d5d;
+}
+
+.green {
+    color: #45d16f;
+}
+
+label {
+    font-weight: 100;
+    width: 150px;
+    font-size: small;
+    height: 50px;
+    display: block;
+}
+
+.flip-front,
+.flip-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: flat;
+    transform-style: flat;
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.flip-front {
+    color: #313131;
+    border: 2px solid #313131;
+    background-color: transparent;
+    -webkit-transform: rotateX(0deg) translateZ(25px);
+    -ms-transform: rotateX(0deg) translateZ(25px);
+    -o-transform: rotateX(0deg) translateZ(25px);
+    transform: rotateX(0deg) translateZ(25px);
+}
+
+.flip-back {
+    color: #fff;
+    background-color: #313131;
+    border: 2px solid #313131;
+    -webkit-transform: rotateX(90deg) translateZ(25px);
+    -ms-transform: rotateX(90deg) translateZ(25px);
+    -o-transform: rotateX(90deg) translateZ(25px);
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+.btn:hover .flip-front {
+    -webkit-transform: rotateX(-90deg) translateZ(25px);
+    -ms-transform: rotateX(-90deg) translateZ(25px);
+    -o-transform: rotateX(-90deg) translateZ(25px);
+    transform: rotateX(-90deg) translateZ(25px);
+}
+
+.btn:hover .flip-back {
+    -webkit-transform: rotateX(0deg) translateZ(25px);
+    -ms-transform: rotateX(0deg) translateZ(25px);
+    -o-transform: rotateX(0deg) translateZ(25px);
+    transform: rotateX(0deg) translateZ(25px);
+}
+
+.center {
+    display: inline-block;
+    height: 50px;
+    width: 15%;
+    margin: 0 auto;
+}
+
+svg {
+    display: none;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(1);
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+}
+
+.stroke-still {
+    stroke: #e6e6e6;
+}
+
+.stroke-animation {
+    -webkit-animation: stroke-spacing 1.2s ease-in, stroke-color 4.8s linear;
+    animation: stroke-spacing 1.2s ease-in, stroke-color 4.8s linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-delay: 0;
+    animation-delay: 0;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+
+@-webkit-keyframes stroke-spacing {
+    0% {
+        stroke-dasharray: 0 200;
+    }
+    45% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 200 200;
+    }
+    90% {
+        stroke-dashoffset: -200;
+        stroke-dasharray: 200 200;
+    }
+    100% {
+        stroke-dashoffset: -200;
+        stroke-dasharray: 200 200;
+    }
+}
+
+@keyframes stroke-spacing {
+    0% {
+        stroke-dasharray: 0 200;
+    }
+    45% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 200 200;
+    }
+    90% {
+        stroke-dashoffset: -200;
+        stroke-dasharray: 200 200;
+    }
+    100% {
+        stroke-dashoffset: -200;
+        stroke-dasharray: 200 200;
+    }
+}
+
+@-webkit-keyframes stroke-color {
+    0% {
+        stroke: #3498DB;
+    }
+    24% {
+        stroke: #d86666;
+    }
+    25% {
+        stroke: #327864;
+    }
+    49% {
+        stroke: #57aec8;
+    }
+    50% {
+        stroke: #5555b9;
+    }
+    74% {
+        stroke: #5cb2d4;
+    }
+    75% {
+        stroke: #78325a;
+    }
+    99% {
+        stroke: #d44c9a;
+    }
+}
+
+@keyframes stroke-color {
+    0% {
+        stroke: #3498DB;
+    }
+    24% {
+        stroke: #d86666;
+    }
+    25% {
+        stroke: #327864;
+    }
+    49% {
+        stroke: #57aec8;
+    }
+    50% {
+        stroke: #5555b9;
+    }
+    74% {
+        stroke: #5cb2d4;
+    }
+    75% {
+        stroke: #78325a;
+    }
+    99% {
+        stroke: #d44c9a;
+    }
+}

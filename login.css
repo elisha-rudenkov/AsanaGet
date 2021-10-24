@@ -1,0 +1,86 @@
+body,
+html {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+input {
+    border-radius: 7px;
+    border-width: thin;
+}
+
+#wrap {
+    color: #313131;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+#smaler-text {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input {
+    height: 20px;
+}
+
+#Back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#Save {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 11px;
+}
+
+#Clear {
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+    margin-bottom: 10px;
+}
+
+#box {
+    height: 50px;
+}
+
+#message-box {
+    text-align: center;
+    padding-bottom: 15%;
+    background-color: #d6f0d6;
+    font-weight: 600;
+    font-family: "Raleway";
+    border-radius: 5px;
+    font-size: 15pt;
+    display: none;
+}
+
+#message-box-2 {
+    text-align: center;
+    background-color: #fbc0c0;
+    font-weight: 600;
+    font-family: "Raleway";
+    border-radius: 5px;
+    font-size: 15pt;
+    display: none;
+}
+
+#show-pass {
+    font-weight: 100;
+}
