@@ -1,3 +1,5 @@
+Works only with learning Genie.
+
 ## Table of contents
 * [Project Description](#project-description)
 * [Technologies](#technologies)
